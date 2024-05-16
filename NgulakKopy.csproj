@@ -60,6 +60,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Pengepul\LoginPengepul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pengepul\LoginPengepul.Designer.cs">
+      <DependentUpon>LoginPengepul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Petani\LoginPetani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Petani\LoginPetani.Designer.cs">
+      <DependentUpon>LoginPetani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pusat\LoginPusat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pusat\LoginPusat.Designer.cs">
+      <DependentUpon>LoginPusat.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +90,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="Views\Petani\LoginPetani.resx">
+      <DependentUpon>LoginPetani.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,10 +112,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\Pengepul\" />
-    <Folder Include="Views\Petani\" />
-    <Folder Include="Views\Pusat\" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
